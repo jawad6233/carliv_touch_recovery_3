@@ -201,16 +201,6 @@ LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/sbin
 LOCAL_SRC_FILES := killrecovery.sh
 include $(BUILD_PREBUILT)
 
-ifeq ($(TARGET_USERIMAGES_USE_UBIFS),true)
-include $(CLEAR_VARS)				   
-LOCAL_MODULE := ubiutils
-LOCAL_MODULE_TAGS := optional
-LOCAL_CFLAGS += -DUBIFS_SUPPORT
-LOCAL_C_INCLUDES += system/extras/ext4_utils kernel					
-LOCAL_STATIC_LIBRARIES += libz ubi_ota_update
-include $(BUILD_STATIC_LIBRARY)
-endif
-
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := verifier_test.c verifier.c
