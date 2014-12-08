@@ -20,6 +20,7 @@ Some of the features:
 - and some other;
 - some of the features are inspired from [ProjectOpenCannibal Recovery](https://github.com/ProjectOpenCannibal/android_bootable_recovery);
 
+____
 
 The UBIFS support was originally developed by [christiantroy - Alan Marchesan](https://github.com/christiantroy), but I changed some things after I studied the original stock MTK recovery with UBIFS support.
 ____
