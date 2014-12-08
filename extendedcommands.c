@@ -2088,7 +2088,7 @@ void show_carliv_menu() {
 				    if (extra_paths != NULL) {
 				        for (i = 0; i < get_num_extra_volumes(); i++) {
 							ensure_path_mounted(extra_paths[i]);
-				            sprintf(buf, "%s/.android_secure", extra_paths[i]);
+				            sprintf(buf, "%s", extra_paths[i]);
 				            if (default_aromafm(buf)) {
 			                    break;
 			                }
