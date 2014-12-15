@@ -23,6 +23,7 @@ Some of the features:
 
 ____
 
+You can check [my building from source guide](http://forum.xda-developers.com/android/development/guide-how-to-build-cwm-based-recovery-t2973804).
 To build, do it like with any other CWM recovery, but it is important to set up a flag in BoardConfig for your device screen resolution `DEVICE_RESOLUTION := 720x1280` and use yours - 720x1280 here is just for example. It won't work without it, because that will add specific screen size images for menu buttons. The possible resolution to set are: 240x240, 320x480, 480x800, 480x854, 540x960, 600x1024, 720x1280, 768x1024, 768x1280, 800x1200, 800x1280, 1024x600, 1080x1920, 1280x720, 1280x768. If your screen resolution is not in the list, you have to make it, otherwise it won't work. And if you don't want to replace the stock CWM recovery folder, you can add this as "recovery-carliv" folder in "bootable" along with "recovery" and "recovery-cm". In this case you will need another flag on BoardConfig: `RECOVERY_VARIANT := carliv`.
 Also you can choose a font that will look better on your screen, since now with xiaolu's courtesy we have more: `BOARD_USE_CUSTOM_RECOVERY_FONT := \"font_17x33.h\"`.
 ____
